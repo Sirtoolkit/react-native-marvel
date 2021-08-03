@@ -127,9 +127,8 @@ const styles = StyleSheet.create({
   },
   backButton: {
     position: 'absolute',
-    zIndex: 999,
     elevation: 9,
-    top: 30,
-    left: 5,
+    top: 16,
+    left: 8,
   },
 });
