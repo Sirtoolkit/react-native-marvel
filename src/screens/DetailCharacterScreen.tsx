@@ -47,7 +47,7 @@ export const DetailCharacterScreen = ({navigation, route}: Props) => {
 
       <View style={styles.backButton}>
         <TouchableOpacity onPress={navigation.pop}>
-          <Icon color="white" name="arrow-back-outline" size={60} />
+          <Icon color="white" name="arrow-back-outline" size={32} />
         </TouchableOpacity>
       </View>
       <View

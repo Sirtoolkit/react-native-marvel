@@ -79,6 +79,8 @@ const SearchScreen = ({navigation}: Props) => {
         <TextInput
           onChangeText={handlerSearch}
           value={query}
+          placeholder='buscar...'
+          placeholderTextColor='grey'
           style={{
             flex: 1,
             color: 'grey',

@@ -1,5 +1,4 @@
 import {DrawerScreenProps} from '@react-navigation/drawer';
-import {StackScreenProps} from '@react-navigation/stack';
 import React, {useEffect} from 'react';
 import {ActivityIndicator, View, ScrollView, Text} from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
@@ -16,7 +15,11 @@ export const HomeScreen = ({navigation}: Props) => {
   useEffect(() => {
     navigation.setOptions({
       headerLeft: () => (
-        <Icon name="menu-outline" size={30} onPress={navigation.toggleDrawer} />
+        <Icon
+          name="menu-outline"
+          size={30}
+          // onPress={() => navigation.toggleDrawer()}
+        />
       ),
       headerRight: () => (
         <Icon
@@ -36,7 +39,7 @@ export const HomeScreen = ({navigation}: Props) => {
   if (isLoading) {
     return (
       <View style={{flex: 1, justifyContent: 'center', alignContent: 'center'}}>
-        <ActivityIndicator color="red" size={100} />
+        <ActivityIndicator color="red" size='large' />
       </View>
     );
   }
